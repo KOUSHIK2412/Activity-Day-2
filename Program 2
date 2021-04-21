@@ -1,0 +1,21 @@
+Program to access digits of a given integer and print them in the same order
+
+#include <stdio.h>
+
+int main()
+{
+    int n,i=0,j,a[100];
+    
+    printf("enter the value\n");
+    scanf("%d",&n);
+    printf("Digits in same order\n");
+    while(n>0)
+    {
+        a[i++]=n%10;
+        n=n/10;
+        
+    }
+    for(j=i-1;j>=0;j--)
+      printf("%d \n",a[j]);
+    return 0;
+}

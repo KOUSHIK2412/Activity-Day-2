@@ -1,0 +1,21 @@
+Program to access digits of a given integer and print them in the same order
+
+#include <stdio.h>
+
+int main()
+{
+    int i,x,flag=0;
+    printf("Enter the value\n");
+    scanf("%d",&x);
+    for(i=2;i<x-1;i++)
+    {
+        if(x%i==0)
+         flag=1;
+         break;
+    }
+    if(flag==0)
+       printf("Prime number\n");
+    else
+       printf("Not a prime number\n");
+    return 0;
+}
